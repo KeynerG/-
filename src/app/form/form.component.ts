@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -7,9 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+  name = "oscar";
+  lastname = "mendez";
+  email = "oscar@.com";
+  from = "";
+  to = "";
+  tickets = 0;
+  price =0;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  btnClick(){
+    alert('Hello');
   }
 
 }
